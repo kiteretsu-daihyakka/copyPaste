@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>CopyPaste</title>
+        <style>
+            /*input{
+                width: 200px;
+                width: 200px;
+            }*/
+        </style>
+    </head>
+    <body>
+        <form action="" enctype="multipart/form-data" method="GET">
+            {% csrf_token %}
+            <h3>{{entrdTxt}}</h3>
+            <input name="textHere" required>
+            <button type="submit">Enter</button>
+        </form>
+    </body>
+</html>
